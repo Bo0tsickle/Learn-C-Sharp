@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace  program
-{
-    static void Main(string[] args)
-        {
-            Console.WriteLine("I am starting to program in C#.");
-            Console.ReadLine();
+namespace first_program {
+    class Program {
+        static void Main(string[] args) {
+            
         }
+    }
 }
