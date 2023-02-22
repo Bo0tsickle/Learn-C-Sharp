@@ -12,4 +12,4 @@ int num2 = randomNumbers.Next(1, 6+1);
 int num3 = randomNumbers.Next(1, 6+1);
 
 // Output
-Console.WriteLine("Thrown Numbers: " + num1 + " " + num2 + " " + num3)
+Console.WriteLine("Thrown Numbers: " + num1 + " " + num2 + " " + num3);
