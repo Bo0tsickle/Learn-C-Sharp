@@ -11,7 +11,7 @@ string text = "Never gonna give you up.";
 Console.WriteLine("Original Text: " + text);
 Console.WriteLine("Number of characters: " + text.Length);
 Console.WriteLine("In Uppercase: " + text.ToUpper());
-Console.WriteLine("Does it contain word \"gonna\"? " + text.Contains("last"));
+Console.WriteLine("Does it contain word \"gonna\"? " + text.Contains("gonna"));
 
 // Waiting For Enter
 Console.ReadLine();
