@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 // get input
+Console.Write("Enter a sentence and press enter: ");
 string input = Console.ReadLine();
 
 // output
