@@ -7,8 +7,14 @@ using System.Threading.Tasks;
 // input and conversion
 Console.Write("First number: ");
 string num = Console.ReadLine();
-double num1 = Convert.ToInt32(num);
+double num1 = Convert.ToDouble(num);
 
 Console.Write("Second number: ");
 num = Console.ReadLine();
-double num2 = Convert.ToInt32(num);
+double num2 = Convert.ToDouble(num);
+
+// output and calculations
+Console.WriteLine("Sum is " + (num1 + num2));
+Console.WriteLine("Difference is " + (num1 - num2));
+Console.WriteLine("Product is " + (num1 * num2));
+Console.WriteLine("Quotient is " + (num1 / num2));
