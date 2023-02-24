@@ -15,9 +15,5 @@ name1 = name1.ToLower();
 name2 = name2.ToLower();
 
 // compare and output
-if (name1 == name2) {
-    Console.WriteLine("You have entered the same name");
-}
-else {
-    Console.WriteLine("You have entered different names.");
-}
+if (name1 == name2) Console.WriteLine("You have entered the same name");
+else Console.WriteLine("You have entered different names.");
