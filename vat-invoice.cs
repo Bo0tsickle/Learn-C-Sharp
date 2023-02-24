@@ -13,15 +13,15 @@ DateTime invoiceDate = Convert.ToDateTime(Console.ReadLine());
 // do checks to see if the invoice date is before the payment date
 bool legality = true;
 if (invoiceDate < paymentDate) {
-    Console.WriteLine("Invoice date cannot precede payment.");
+    Console.WriteLine("Invoice cannot precede payment.");
     legality = false;
 }
 if (invoiceDate > paymentDate.AddDays(15)) {
-    Console.WriteLine("Invoice date cannot be over 15 days after payment.");
+    Console.WriteLine("Invoice cannot be over 15 days after payment.");
     legality = false;
 }
 
 // output
 if (legality) {
-    Console.WriteLine("Dates accepted");
+    Console.WriteLine("Dates accepted.");
 }
