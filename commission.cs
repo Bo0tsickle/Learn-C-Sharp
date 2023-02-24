@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 // get product price input
 Console.Write("Product Price: ");
-double Product = Console.ReadLine();
+double Product = Convert.ToDouble(Console.ReadLine());
 
 // commisions input
 Console.Write("Merchant Commission (percent): "); // merchant commission
-int Merchant = Console.ReadLine();
+int Merchant = Convert.ToInt32(Console.ReadLine());
 Console.Write("Distributor Commission (percent)"); // distributor commission
-int Distributor = Console.ReadLine();
+int Distributor = Convert.ToInt32(Console.ReadLine());
 
 // conversions and output
 Console.WriteLine("Merchant Earnings: " + (Product * (Merchant / 100)));
