@@ -14,6 +14,8 @@ int Merchant = Convert.ToInt32(Console.ReadLine());
 Console.Write("Distributor Commission (percent)"); // distributor commission
 int Distributor = Convert.ToInt32(Console.ReadLine());
 
+Console.Write("-----------------------------");
+
 // conversions and output
 Console.WriteLine("Merchant Earnings: " + (Product * (Merchant / 100)));
 Console.WriteLine("Distributor Earnings: " + (Product * (Distributor / 100)));
