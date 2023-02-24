@@ -16,6 +16,10 @@ double customerDivisor = 1 + vatPercent;
 double originalCustomerPrice = vatCustomerPrice / customerDivisor;
 double vatAmount = originalCustomerPrice * vatPercent;
 
+// rounding
+double originalCustomerPriceRounded = Math.Round(originalCustomerPrice, 2);
+double vatAmountRounded = Math.Round(vatAmount, 2);
+
 // output
-Console.WriteLine("Price without VAT: " + originalCustomerPrice);
-Console.WriteLine("VAT: " + vatAmount);
+Console.WriteLine("Price without VAT: " + originalCustomerPriceRounded);
+Console.WriteLine("VAT: " + vatAmountRounded);
