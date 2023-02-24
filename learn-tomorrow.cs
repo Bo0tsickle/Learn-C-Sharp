@@ -5,14 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 // Output
-Console.WriteLine("I will start learning tomorrow.");
-Console.WriteLine("I will start learning tomorrow.");
-Console.WriteLine("I will start learning tomorrow.");    
-Console.WriteLine("I will start learning tomorrow.");
-Console.WriteLine("I will start learning tomorrow.");
-
-Console.WriteLine("I will start learning tomorrow.");
-Console.WriteLine("I will start learning tomorrow.");
-Console.WriteLine("I will start learning tomorrow.");
-Console.WriteLine("I will start learning tomorrow.");
-Console.WriteLine("I will start learning tomorrow.");
+for (int i = 0; i < 10; i++) {
+    Console.WriteLine("I will start learning tomorrow.");
+}
