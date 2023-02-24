@@ -8,15 +8,15 @@ using System.Threading.Tasks;
 string realPassword = "fren";
 
 // user input
-Console.WriteLine("Enter password: ");
+Console.Write("Enter password: ");
 string enteredPassword = Console.ReadLine();
 
 // check if entered password matches the real password
 // if it does, say "You're in"
 // if it doesn't, say, "You're bad"
-if (realPassword == enteredPassword) {
-    Console.WriteLine("You're in");
+if (realPassword != enteredPassword) {
+    Console.WriteLine("You're bad.");
 }
 else {
-    Console.WriteLine("You're bad");
+    Console.WriteLine("You're in.");
 }
