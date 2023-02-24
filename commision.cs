@@ -9,8 +9,12 @@ Console.Write("Product Price: ");
 double Product = Console.ReadLine();
 
 // commisions input
-Console.Write("Merchant Commission (percent): ");
+Console.Write("Merchant Commission (percent): "); // merchant commission
 int Merchant = Console.ReadLine();
-
-Console.Write("Distributor Commission (percent)");
+Console.Write("Distributor Commission (percent)"); // distributor commission
 int Distributor = Console.ReadLine();
+
+// conversions and output
+Console.WriteLine("Merchant Earnings: " + (Product * (Merchant / 100)));
+Console.WriteLine("Distributor Earnings: " + (Product * (Distributor / 100)));
+Console.WriteLine("Producer Earnings: " + (Product * ((100 - (Merchant + Distributor)) / 100)));
