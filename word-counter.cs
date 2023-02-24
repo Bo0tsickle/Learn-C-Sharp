@@ -9,4 +9,4 @@ Console.Write("Enter a word: ");
 string input = Console.ReadLine();
 
 // count characters
-int inputAmount = input.Length
+int inputAmount = input.Length();
