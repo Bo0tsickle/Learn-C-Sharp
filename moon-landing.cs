@@ -34,14 +34,18 @@ while (height >= 0) {
         Console.WriteLine("CONTROL MALFUNCTION! CONTROL MALFUNCTION!");
         brakePercent = 0;
     }
+    if (fuel <= 0) {
+        Console.WriteLine("NO FUEL! NO FUEL!");
+        brakePercent = 0;
+    }
     Console.WriteLine(" ");
 
     // step 3. calculations for everything
     brakeForce = 360 * brakePercent; 
-    fuel -= -brakeForce / 3000;
     acceleration = 1.62 - (brakeForce / 8000);
-    velocity += acceleration;
     height -= velocity + acceleration / 2;
+    velocity += acceleration;
+    fuel -= brakeForce / 3000;
 }
 
 // ending output
