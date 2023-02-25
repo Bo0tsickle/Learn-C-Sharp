@@ -14,7 +14,7 @@ while (friday.DayOfWeek != DayOfWeek.Friday) {
 }
 
 // calc day difference
-int dayDifference = Convert.ToInt16(friday) - Convert.ToInt16(today);
+TimeSpan dayDifference = friday - today;
 
 // output
 Console.WriteLine("Nearest Friday: " + friday.ToLongDateString());
