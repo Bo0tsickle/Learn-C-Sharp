@@ -9,13 +9,13 @@ DateTime today = DateTime.Today;
 DateTime friday = today;
 
 // add days until next friday
-while (friday != DayOfWeek.Friday) {
+while (friday.DayOfWeek != DayOfWeek.Friday) {
     friday = friday.AddDays(1);
 }
 
 // calc day difference
-int dayDifference = friday - today;
+int dayDifference = Convert.ToInt16(friday) - Convert.ToInt16(today);
 
 // output
-Console.WriteLine("Nearest Friday: " + friday.ToLongDateString);
+Console.WriteLine("Nearest Friday: " + friday.ToLongDateString());
 Console.WriteLine("Remaining Days: " + dayDifference);
