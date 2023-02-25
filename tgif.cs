@@ -18,4 +18,4 @@ TimeSpan dayDifference = friday - today;
 
 // output
 Console.WriteLine("Nearest Friday: " + friday.ToLongDateString());
-Console.WriteLine("Remaining Days: " + dayDifference);
+Console.WriteLine("Remaining Days: " + dayDifference.Days);
