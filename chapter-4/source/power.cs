@@ -11,9 +11,10 @@ Console.Write("Enter n (power): ");
 int power = Convert.ToInt32(Console.ReadLine());
 
 // do loop calculations
-for (power; power <= 1; power--) {
-    numberToBeRaised *= numberToBeRaised;
+int result = 1;
+for (int i = 0; i < power; i++) {
+    result *= numberToBeRaised;
 }
 
 // output
-Console.WriteLine("x ^ n =" + numberToBeRaised);
+Console.WriteLine("x ^ n = " + result);
