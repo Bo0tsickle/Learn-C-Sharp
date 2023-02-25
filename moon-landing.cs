@@ -23,12 +23,18 @@ while (height > 0) {
 
     // step 3. calculations for everything
     brakeForce = 360 * brakePercent; 
-    fuel = (-brakeForce) / 3000;
-    velocity = 1.62 - (brakeForce / 8000);
-    height = (-velocity) - (velocity / 2);
+    fuel = fuel - ((-brakeForce) / 3000);
+    velocity = velocity + (1.62 - (brakeForce / 8000));
+    height = height - ((-velocity) - (velocity / 2));
 }
 
 // ending output
-if (velocity < 4.0) Console.WriteLine("You got a soft landing! Congratulations!");
-if ((velocity >= 4.0) && (velocity <= 8.0)) Console.WriteLine("Oof! You got a hard, hard landing! Still, congratulations on surviving!");
-else Console.WriteLine("Sorry! You were going too fast, so upon landing, you crashed and died! *play mario death sound*");
+if (velocity < 4.0) {
+    Console.WriteLine("You got a soft landing! Congratulations!");
+}
+if ((velocity >= 4.0) && (velocity <= 8.0)) {
+    Console.WriteLine("Oof! You got a hard, hard landing! Still, congratulations on surviving!");
+}
+else {
+    Console.WriteLine("Sorry! You were going too fast, so upon landing, you crashed and died! *play mario death sound*");
+}
