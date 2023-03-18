@@ -1,5 +1,5 @@
 // define variables
-int[] numbers;
+list<int> numbers;
 
 // do calculations
 for (int i = 0; i < 1000;) {
