@@ -1,5 +1,7 @@
+using System;
+
 // define variables
-list<int> numbers;
+list<int> numbers = new List<int>();
 
 // do calculations
 for (int i = 0; i < 1000;) {
