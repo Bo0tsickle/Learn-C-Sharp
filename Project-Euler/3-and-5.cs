@@ -1,11 +1,8 @@
 using System;
 
-// define variables
-public List<Int16> numbers = new List<Int16>();
-
-// do calculations
+int[] numbers = new int[];
 for (int i = 0; i < 1000;) {
-    if ((i % 3 == 0) || (i % 5 == 0)) { numbers.Add(i); }
+    if ((i % 3 == 0) || (i % 5 == 0)) { numbers.Append(i).ToArray(); }
 }
 
 int sum = 0;
