@@ -1,8 +1,7 @@
 using System;
-using list;
 
 // define variables
-list<int> numbers = new list<int>();
+public List<Int16> numbers = new List<Int16>();
 
 // do calculations
 for (int i = 0; i < 1000;) {
