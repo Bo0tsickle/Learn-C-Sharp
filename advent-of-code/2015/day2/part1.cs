@@ -13,7 +13,7 @@ return sum;
 int[] GetDimensionsFromStrInput(string input) {
     int[] dimensions = new int[2];
     string strDimension = "";
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 2; i++) {
        if (input[i] == 'x') {
             dimensions[i] = Convert.ToInt32(strDimension);
        } 
