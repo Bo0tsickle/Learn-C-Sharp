@@ -26,7 +26,7 @@ int[] GetDimensionsFromStrInput(string input) {
 
 int GetAmountOfWrappingPaper(int[] dimensions) {
     int sum = 0;
-    int smallestDimension = dimensions.Min();
+    int smallestDimension = Math.Min(dimensions[0], Math.Min(dimensions[1], dimensions[2]));
     foreach (var singleDimension in dimensions) {
        sum += 2 * singleDimension; 
     }
