@@ -1,5 +1,3 @@
 using System;
 
-void main() {
-    string inputPath = "input"; 
-}
+string inputPath = "input"; 
