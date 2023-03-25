@@ -16,7 +16,10 @@ foreach (var parenthese in input) {
             floor--;
             break;
             }
-        default: Console.WriteLine("this should not be happening  w h a t");
+        default: {
+            Console.WriteLine("this should not be happening  w h a t");
+            break;
+            }
     }
 }
 
