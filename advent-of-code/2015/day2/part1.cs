@@ -5,7 +5,7 @@ string[] input = File.ReadAllLines("input.txt");
 int sum = 0;
 for(int i = 0; i < input.Length(); i++) {
     string tempInput = input[i];
-    int[] dimensions = {GetDimensionsFromStrInput(tempInput)};
+    int[] dimensions = GetDimensionsFromStrInput(tempInput);
     sum += GetAmountOfWrappingPaper(dimensions);
 }
 return sum;
