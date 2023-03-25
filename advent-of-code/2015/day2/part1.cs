@@ -11,7 +11,7 @@ for(int i = 0; i < input.Length; i++) {
 return sum;
 
 int[] GetDimensionsFromStrInput(string input) {
-    int[] dimensions = new int[3];
+    int[] dimensions = new int[2];
     string strDimension = "";
     for (int i = 0; i < 3; i++) {
        if (input[i] == 'x') {
