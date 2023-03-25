@@ -2,12 +2,13 @@ using System;
 using System.IO;
 
 // initialize variables
-int floor = 0;
+int floor = 0, i = 0;
 string inputPath = "input"; 
 string input = File.ReadAllText(inputPath);
 
 // make a foreach statement that iterates through the input and adds or subtracts to the floor count
 foreach (var parenthese in input) {
+    i++;
     switch(parenthese) {
         case '(': {
             floor++;
@@ -15,6 +16,10 @@ foreach (var parenthese in input) {
             }
         case ')': {
             floor--;
+            if (floor < 0) {
+                Console.WriteLine(i);
+                return 0;
+            }
             break;
             }
         default: {
@@ -25,3 +30,4 @@ foreach (var parenthese in input) {
 }
 
 Console.WriteLine(floor); // answer: 74
+return 0;
