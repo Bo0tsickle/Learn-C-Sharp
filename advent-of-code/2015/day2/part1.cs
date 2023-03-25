@@ -2,11 +2,6 @@ using System;
 using System.IO;
 
 string[] input = File.ReadAllLines("input.txt");
-
-foreach (var inp in input) {
-    Console.WriteLine(inp);
-}
-
 int sum = 0;
 for(int i = 0; i < input.Length; i++) {
     string tempInput = input[i];
